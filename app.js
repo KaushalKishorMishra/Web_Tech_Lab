@@ -1,6 +1,7 @@
-const search_form = document.getElementById('search_form'); // linking search_form from the html file to js file
-const users_list = document.getElementById('users_list'); // linking user_list from the html file to js file 
-const user_detail = document.getElementById('user_detail'); // linking user_detail from the html file to js file
+// calling nodes from html
+const search_form = document.getElementById('search_form');
+const users_list = document.getElementById('users_list');
+const user_detail = document.getElementById('user_detail');
 const user_login = document.getElementById('user_login');
 const user_name = document.getElementById('user_name');
 const user_avatar = document.getElementById('user_avatar_url');
@@ -11,6 +12,7 @@ const error_message = document.getElementById('error_message');
 const user_public_repos = document.getElementById('user_public_repos');
 const api_calling = document.getElementById('api_calling');
 
+// function to remove the value of search bar on page load
 window.addEventListener('load', () => {
   search_bar.value = '';
 });
@@ -58,7 +60,6 @@ function searchUser() {
         pop_error()
         error_message.innerHTML = "Please enter a valid username or user does not exist. " + error;
       })
-    // write the axios code in fetch
   }
   else {
     pop_error()

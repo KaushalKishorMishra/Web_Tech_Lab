@@ -22,6 +22,11 @@ body {
     /* width: 100%; */
 }
 
+
+.color-purple {
+    color: rgb(165, 84, 237);
+}
+
 .section {
     display: flex;
     justify-content: center;
@@ -30,12 +35,7 @@ body {
     text-align: center;
 }
 
-.color-purple {
-    color: rgb(165, 84, 237);
-}
-
 .user-details {
-    /* background-color: azure; */
     width: fit-content;
     margin: 2rem auto;
     font-size: large;
@@ -64,14 +64,15 @@ body {
     outline: 2px solid white;
 }
 
-.avatar:hover{
+.avatar:hover {
     transform: scale(1.1);
     transition: transform 0.5s ease-in-out;
 }
 
-.user-avatar{
-    margin:1rem 0 1rem 0 ;
+.user-avatar {
+    margin: 1rem 0 1rem 0;
 }
+
 .api-calling {
     position: fixed;
     top: 0;

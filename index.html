@@ -24,19 +24,19 @@
 
 <body>
 
+    <!-- total no. of api callings  -->
     <div id="api_calling" class="api-calling color-purple"></div>
 
+    <!-- user search form -->
     <div class="section">
         <div class="search-form" id="search_form">
             <h2 class="title">
                 Search For
-                "<i class="fa-brands fa-github fa-beat color-purple"></i>"
+                " <i class="fa-brands fa-github fa-beat color-purple"></i> "
                 User
-                <!-- <i class="fa-brands fa-github fa-beat" style="color: #a554ed;"></i> -->
             </h2>
             <form onsubmit="searchUser(); return false">
                 <input type="text" class="search-bar" id="search_bar">
-                <!-- <input type="submit" value="Search" class=``> -->
                 <button>
                     <lord-icon src="https://cdn.lordicon.com/zniqnylq.json" trigger="hover" class="search-icon"
                         colors="primary:#4be1ec,secondary:#cb5eee">
@@ -46,6 +46,7 @@
         </div>
     </div>
 
+    <!-- user details display -->
     <div class="section user-details scale-up-hor-left " id="user_detail">
         <h2 class="title">User Details on <i class="fa-brands fa-github fa-beat color-purple"></i></h2>
         <div class="user-avatar">
@@ -69,8 +70,7 @@
         </div>
     </div>
 
-
-
+    <!-- error display -->
     <div id="error_message" class="error-message scale-up-ver-bottom scale-up-hor-left">
     </div>
 
