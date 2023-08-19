@@ -6,11 +6,13 @@ const user_login = document.getElementById('user_login');
 const user_name = document.getElementById('user_name');
 const user_avatar = document.getElementById('user_avatar_url');
 const user_github = document.getElementById('user_github_html_url');
+const user_address = document.getElementById('user_address');
 const search_bar = document.getElementById('search_bar');
 const search_button = document.getElementById('search_button');
 const error_message = document.getElementById('error_message');
 const user_public_repos = document.getElementById('user_public_repos');
 const api_calling = document.getElementById('api_calling');
+
 
 // function to remove the value of search bar on page load
 window.addEventListener('load', () => {
@@ -52,6 +54,7 @@ function searchUser() {
         user_github.href = user.html_url;
         user_github.textContent = user.html_url;
         user_public_repos.textContent = user.public_repos;
+        user_address.textContent = user.location === null ? "User location not set." : user.location;
 
       })
       .catch(function (error) {
